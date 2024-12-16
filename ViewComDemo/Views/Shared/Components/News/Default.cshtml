@@ -1,0 +1,12 @@
+﻿@model List<News>
+
+<h3>Son Haberler</h3>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            <strong>@item.Title</strong> - @item.PublishedDate.ToShortDateString()
+            <p>@item.Description</p>
+        </li>
+    }
+</ul>
